@@ -1,6 +1,10 @@
 ##Company Service
 This app demonstrate how to build api using HATEOS and spring data rest. It uses java as a programming language and mongodb as a persistence unit.
 
+If you are interested in consuming API via frontend, then please have a look at :
+[Angular-based-gui](https://github.com/nklmish/company-service-angular-gui)
+
+
 ##Tech stack
 - Spring boot and Spring data
 - Java 8
@@ -13,8 +17,16 @@ This app demonstrate how to build api using HATEOS and spring data rest. It uses
 - HATEOS (HAL implementation)
 
 ##Launch
-You can launch project in a particular profile. E.g.
+### Manual Mode
+* Install and run mongodb locally
+* Launch project in a particular profile. E.g.
 ```./gradlew bootRun -Dspring.profiles.active=dev```
+
+### Docker image
+* ```docker run --name mymongodb -d mongo```
+* ```docker run -i -t -d --name company-service --link mymongodb:mongodb -p 8080:8080 nklmish/company-service:latest```
+* ```docker run -d --name swagger-ui-company-service-angular-swagger -p 8888:8888 -e "API_URL=http://LOCALHOST_OR_DOCKER_IP:8080/v2/api-docs/" sjeandeaux/docker-swagger-ui```
+
 
 NOTE: By default app starts on port 8080
 
