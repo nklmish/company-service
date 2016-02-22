@@ -1,4 +1,4 @@
-##Food Truck
+##Company Service
 This app demonstrate how to build api using HATEOS and spring data rest. It uses java as a programming language and mongodb as a persistence unit.
 
 ##Tech stack
