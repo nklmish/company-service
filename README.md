@@ -22,7 +22,7 @@ NOTE: By default app starts on port 8080
 ```./gradlew clean build dockerBuildImage```
 
 ## REST documentation
-You can visit [a swagger-ui](http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com:8888/swagger-ui/)
+You can visit [swagger-ui](http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com:8888/swagger-ui/)
 
 If you are running the app locally , then please use
 
