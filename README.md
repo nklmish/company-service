@@ -32,7 +32,7 @@ Next in swagger gui you can visit company-controller to find out more about comp
 
 ## Interacting with API
 If you don't want to open Swagger UI then you can use command prompt to interact via API. Below are example of using ```curl```
-## Note - Make sure to use correct host and port in the commands listed below providing you have change default configurations i.e. not running on localhost and/or port 8080. Also you need replace text REPLACE_THIS_WITH_VALID_ID with a valid id (i.e. company id) 
+## Note - Make sure to use correct host and port in the commands listed below providing you have change default configurations i.e. not running on localhost and/or port 8080. Also you need to replace text "REPLACE_THIS_WITH_VALID_ID" with a valid "id" (i.e. company id) 
 Add new company:
 ```
 curl -X POST --header "Content-Type: application/json" --header "Accept: application/hal+json" -d "{
