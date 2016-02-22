@@ -3,7 +3,7 @@ This app demonstrate how to build api using HATEOS and spring data rest. It uses
 
 ##Tech stack
 - Spring boot and Spring data
-- Java
+- Java 8
 - Gradle
 - Groovy (unit testing)
 - Spock (unit testing)
