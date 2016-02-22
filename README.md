@@ -21,10 +21,12 @@ NOTE: By default app starts on port 8080
 ## Building docker image
 ```./gradlew clean build dockerBuildImage```
 
-##REST documentation
-```http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com:8888/swagger-ui/```
+## REST documentation
+You can visit [a swagger-ui](http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com:8888/swagger-ui/)
+
 If you are running the app locally , then please use
-```http://LOCALHOST_OR_DOCKER_IP:PORT_ON_WHICH_APP_IS_RUNNING/swagger-ui.html```
+
+http://LOCALHOST_OR_DOCKER_IP:PORT_ON_WHICH_APP_IS_RUNNING/swagger-ui.html
 
 Next in swagger gui you can visit company-controller to find out more about company's API
 
@@ -94,7 +96,7 @@ curl -X PUT --header "Content-Type: application/json" --header "Accept: applicat
 }" "http://localhost:8080/api/companies/REPLACE_THIS_WITH_VALID_ID"
 ```
 
-Delete company:
+##Delete company:
 ```
 curl -X DELETE --header "Accept: application/hal+json" "http://localhost:8080/api/companies/REPLACE_THIS_WITH_VALID_ID"
 ```
@@ -105,52 +107,37 @@ If you are running it locally or inside local docker container then please chang
 {
   "_links": {
     "self": {
-          "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/actuator"
-    },
-    "trace": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/trace"
-    },
-    "autoconfig": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/autoconfig"
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/actuator"
     },
     "metrics": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/metrics"
-    },
-    "env": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/env"
-    },
-    "health": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/health"
-    },
-    "configprops": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/configprops"
-    },
-    "restart": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/restart"
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/metrics"
     },
     "info": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/info"
-    },
-    "pause": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/pause"
-    },
-    "mappings": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/mappings"
-    },
-    "refresh": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/refresh"
-    },
-    "beans": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/beans"
-    },
-    "resume": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/resume"
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/info"
     },
     "dump": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/dump"
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/dump"
     },
-    "archaius": {
-      "href": "http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com/archaius"
+    "trace": {
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/trace"
+    },
+    "autoconfig": {
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/autoconfig"
+    },
+    "health": {
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/health"
+    },
+    "beans": {
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/beans"
+    },
+    "mappings": {
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/mappings"
+    },
+    "env": {
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/env"
+    },
+    "configprops": {
+      "href": "http://ec2-52-36-229-250.us-west-2.compute.amazonaws.com/configprops"
     }
   }
 }
