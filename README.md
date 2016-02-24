@@ -30,6 +30,17 @@ If you are interested in consuming API via frontend, then please have a look at 
 
 NOTE: By default app starts on port 8080
 
+#gradle.properties
+Please create/update your's ```gradle.properties``` file to include docker's IP address. E.g. <br/>
+For Mac Users: 
+```
+dockerServerUrl=https://<REPLACE_WITH_DOCKER_MACHINE_IP_ADDRESS>:2376/
+```
+For Linux Users: 
+```
+dockerServerUrl=unix:///var/run/docker.sock
+```
+
 ## Building docker image
 ```./gradlew clean build dockerBuildImage```
 
